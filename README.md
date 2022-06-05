@@ -66,3 +66,5 @@ If you have any problem integrating Blocto wallet, you can also check out [Bloct
 ///////////////////////////
 
 Owner address 0x0037ec46aa30a56a
+
+Williem = 0x1dbd87e1268b68e8

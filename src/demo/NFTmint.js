@@ -119,7 +119,12 @@ const NFTmint = () => {
   }
   const updateFlag = (event) => {
     event.preventDefault();
-    setFlag(event.target.value)
+    //setFlag(event.target.value)
+    if(event.target.value == "true"){
+      setFlag(true)
+    }else{
+      setFlag(false)
+    }
   }
 
   const sendTransaction = async (event) => {
@@ -145,7 +150,7 @@ const NFTmint = () => {
   }
 
   const sendMintTransaction = async() => {
-
+    alert(name+"--"+description+"--"+flag)
     try {
       const { transactionId } = await fcl.send([
         fcl.transaction(simpleTransaction),
