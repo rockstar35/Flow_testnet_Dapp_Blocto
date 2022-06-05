@@ -4,12 +4,12 @@ import styled from 'styled-components'
 import Section from './components/Section'
 import Header from './components/Header'
 
-import GetLatestBlock from './demo/GetLatestBlock'
-import GetAccount from './demo/GetAccount'
+// import GetLatestBlock from './demo/GetLatestBlock'
+// import GetAccount from './demo/GetAccount'
 import GetNFTIDs from "./demo/GetNFTIDs"
 import GetTokenBalance from "./demo/GetTokenBalance"
 import Authenticate from './demo/Authenticate'
-import UserInfo from './demo/UserInfo'
+// import UserInfo from './demo/UserInfo'
 import SetAccount from './demo/SetAccount'
 import GetRandomNFT from './demo/GetRandomNFT'
 import DeployContract from './demo/DeployContract'

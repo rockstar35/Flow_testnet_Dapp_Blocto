@@ -152,7 +152,7 @@ const NFTmint = () => {
         fcl.proposer(fcl.currentUser().authorization),
         fcl.payer(fcl.currentUser().authorization),
         fcl.authorizations([fcl.currentUser().authorization]),
-        fcl.args([fcl.arg(name, t.String),fcl.arg(description, t.String),fcl.arg(uri, t.String),fcl.arg(true, t.Bool)]),
+        fcl.args([fcl.arg(name, t.String),fcl.arg(description, t.String),fcl.arg(uri, t.String),fcl.arg(flag, t.Bool)]),
         fcl.limit(100),
       ])
 
