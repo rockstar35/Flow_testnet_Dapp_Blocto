@@ -65,6 +65,10 @@ If you have any problem integrating Blocto wallet, you can also check out [Bloct
 
 ///////////////////////////
 
+https://play.onflow.org/e0b8fca4-e244-4e01-9a6e-3bdb91387984?type=tx&id=d4b27c9f-8a87-43bd-a68d-819dae75e69e&storage=none
+
 Owner address 0x0037ec46aa30a56a
 
 Williem = 0x1dbd87e1268b68e8
+
+Bryce   0x8a1c43fb52172d60

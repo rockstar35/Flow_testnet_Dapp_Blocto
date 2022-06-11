@@ -201,7 +201,7 @@ pub contract MyNFTContract {
             initID: UInt64,
             name: String,
             description: String,
-            uri: String
+            uri: String,
             flag: Bool
             ) {
             self.id = initID
@@ -281,7 +281,7 @@ pub contract MyNFTContract {
             recipient: &{MyToken.Receiver},
             name: String,
             description: String,
-            thumbnail: String
+            thumbnail: String,
             tokenFlag: Bool
             ): @NFT {
 
