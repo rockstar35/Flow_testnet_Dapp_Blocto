@@ -149,10 +149,10 @@ pub contract MyToken {
   init() {
       self.totalSupply = 1000000.0
 
-      self.TokenReceiverPublicPath = /public/TokenReceiver_test1
-      self.TokenValultStoragePath = /storage/TokenValutPath_test1
-      self.TokenBalancePublicPath = /public/TokenBalance_test1
-      self.TokenAdminStoragePath = /storage/TokenAdmin_test1
+      self.TokenReceiverPublicPath = /public/TokenReceiver_test2
+      self.TokenValultStoragePath = /storage/TokenValutPath_test2
+      self.TokenBalancePublicPath = /public/TokenBalance_test2
+      self.TokenAdminStoragePath = /storage/TokenAdmin_test2
       let vault <- create Vault(balance: self.totalSupply)
       self.account.save(<-vault, to: self.TokenValultStoragePath)
 
@@ -310,11 +310,11 @@ pub contract MyNFTContract {
         // Initialize the total supply
         self.totalSupply = 0
         // Set the named paths
-        self.CollectionStoragePath = /storage/NFTCollection_test1
-        self.CollectionPublicPath = /public/NFTCollection_test1
-        self.MinterStoragePath = /storage/NFTMinter_test1
-        self.MinterPublicPath = /public/NFTMinter_test1
-        self.WithdrawPublicPath = /public/NFTwithdraw_test1
+        self.CollectionStoragePath = /storage/NFTCollection_test2
+        self.CollectionPublicPath = /public/NFTCollection_test2
+        self.MinterStoragePath = /storage/NFTMinter_test2
+        self.MinterPublicPath = /public/NFTMinter_test2
+        self.WithdrawPublicPath = /public/NFTwithdraw_test2
         if self.account.borrow<&MyToken.Vault>(from: MyToken.TokenValultStoragePath) == nil {
             self.account.save(<-MyToken.createEmptyVault(), to: MyToken.TokenValultStoragePath)
             self.account.link<&MyToken.Vault{MyToken.Receiver}>(
